@@ -1,0 +1,42 @@
+general:
+   patience: 1
+   batch_size: 500
+   factor: 0.1
+   experiment: '5'
+   repeatable_run: false
+   tensorboard_callback: true
+columns:
+   categorical:
+      - 'neighbourhood_group'
+      - 'neighbourhood'
+      - 'room_type'
+   continuous: 
+      - 'minimum_nights'
+      - 'number_of_reviews'
+      - 'reviews_per_month'
+      - 'calculated_host_listings_count'
+   date:
+      - 'last_review'
+   text:
+      - 'name'
+      - 'host_name'
+   label:
+      - 'price'
+bounding_box:
+    max_long: -73.70018092
+    max_lat: 40.91617849
+    min_long: -74.25909008
+    min_lat: 40.47739894
+newark_bounding_box:
+    max_long: -74.11278706
+    max_lat: 40.67325015
+    min_long: -74.25132408
+    min_lat: 40.78813864
+geo_columns:
+    - 'latitude'
+    - 'longitude'
+file_names:
+   input_csv: AB_NYC_2019.csv
+   pickled_input_dataframe: 'C:/Users/Sidney/OneDrive/Documents/LiveProject/AB_NYC_2021.pkl'
+   pickled_output_dataframe: AB_NYC_23_May_2021.pkl
+ 
